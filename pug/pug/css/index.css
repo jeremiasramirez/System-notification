@@ -42,6 +42,14 @@
 	border-radius: 10px;
 	padding: .4em 0 .4em .3em;
 	display: inline-block;
+	transition: border-radius,transform .5s;
+ }
+ .notificaciones__today__item:hover{
+ 	opacity: .7;
+ 	transition: border-radius , transform .3s;
+ 	opacity: .7;
+ 	border-radius: 3px;
+ 	transform: scale(.9);
  }
 	
 	.notificaciones__tomorrow{
@@ -70,16 +78,35 @@
 	border-radius: 10px;
 	padding: .4em 0 .4em .3em;
 	display: inline-block;
+	transition: border-radius,transform .5s;
 
 	}
+	 .notificaciones__tomorrow__item:hover{
+ 	transition: border-radius , transform .3s;
+ 	opacity: .7;
+ 	border-radius: 3px;
+ 	transform: scale(.9);
+ }
 	.quit-panel{
 		display: inline-block;
 		position: fixed;
 		top: 0;
 		right: 0;
-		color: orange;
+		color: #444;
 		font-family: sans-serif;
 		margin: .5em;
 		text-decoration: none;
+		transition:transform,color 1s;
+		background-color:orange;
+		padding:.3em;
+		border-radius: 30px;
+		font-weight: 800;
+
+	}
+	.quit-panel:hover{
+		opacity: .5;
+		transform: scale(.9);
+		color: black;
+		transition: transform,color .3s;
 	}
 
